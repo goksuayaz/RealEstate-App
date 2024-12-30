@@ -9,8 +9,8 @@ import {
   View,
 } from "react-native";
 
-import { logout } from "@/lib/appwrite";
-import { useGlobalContext } from "@/lib/global-provider";
+import { logout } from "@/library/appwrite";
+import { useGlobalContext } from "@/library/global-provider";
 
 import icons from "@/constants/icons";
 import { settings } from "@/constants/data";
