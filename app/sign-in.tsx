@@ -60,3 +60,5 @@ if(!loading && isLoggedIn) return <Redirect href="/" />;
     </SafeAreaView>
   )
 }
+
+export default SignIn;

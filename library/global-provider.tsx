@@ -1,4 +1,4 @@
-import { createContext, ReactNode } from "react";
+import { createContext, ReactNode, useContext } from "react";
 import { useAppwrite } from "./useAppwrite";
 import { getCurrentUser } from "./appwrite";
 
@@ -44,7 +44,7 @@ export const GlobalProvider=({children}: {children: ReactNode }) => {
     )
 }
 
-export const useGlobalContext = (): GlobalContextTyoe => {
+export const useGlobalContext = (): GlobalContextType => {
     const context = useContext(GlobalContext);
 
     if(!context){
